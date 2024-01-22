@@ -1,9 +1,10 @@
 'use client';
+
 import { Container, Row, Col } from 'react-grid-system';
 import './footer.css'
-// import reddit from '/src/assets/reddit.png';
-// import twitter from '/src/assets/twitter.png';
-// import facebook from '/src/assets/facebook.png';
+import reddit from '/public/assets/imgs/reddit.png';
+import twitter from '/public/assets/imgs/twitter.png';
+import facebook from '/public/assets/imgs/facebook.png';
 
 const Footer = () => {
   function handleSumbit(e) {
@@ -82,13 +83,13 @@ const Footer = () => {
               <div className='footer-bottom'>
                 <div className='footer-social'>
                   <a href='https://reddit.com'>
-                    {/* <img src={reddit} alt='Reddit Icon' /> */}
+                    <Image src={reddit} alt='Reddit Icon' />
                   </a>
                   <a href='https://facebook.com'>
-                    {/* <img src={facebook} alt='Facebook Icon' /> */}
+                    <Image src={facebook} alt='Facebook Icon' />
                   </a>
                   <a href='https://twitter.com'>
-                    {/* <img src={twitter} alt='Twitter Icon' /> */}
+                    <Image src={twitter} alt='Twitter Icon' />
                   </a>
                 </div>
               </div>
