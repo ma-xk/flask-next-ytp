@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { Container, Row, Col } from 'react-grid-system';
 import './footer.css'
 import reddit from '/public/assets/imgs/reddit.png';
