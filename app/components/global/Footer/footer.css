@@ -1,0 +1,83 @@
+.footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    margin-top: auto;
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 3rem;
+  max-width: 1200px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer-section h5 {
+  color: #aaaaaa;
+  margin-bottom: 1rem;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+.subscribe-section form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.subscribe-section input,
+.subscribe-section button {
+  padding: 0.5rem;
+  border: none;
+  margin-right: 0.5rem;
+}
+.subscribe-section input {
+  flex-grow: 1;
+}
+.subscribe-section button {
+  background-color: #3a7bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Use flex-start or other appropriate value */
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+.footer-links a,
+.footer-social a {
+  color: #aaaaaa;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Add this CSS to your footer.css file */
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the padding as needed */
+}
+
+.footer-social img {
+  height: 36px;
+}
+
