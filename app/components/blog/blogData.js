@@ -1,4 +1,6 @@
-import car from '/public/assets/imgs/car.png';
+'use client';
+
+import car from '/app/components/blog/car.png';
 
 const blogPosts = [
     {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-grid-system';
 import './navbar.css';
-import logo from '/public/assets/imgs/logo.png';
+import logo from '/public/assets/images/logo.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

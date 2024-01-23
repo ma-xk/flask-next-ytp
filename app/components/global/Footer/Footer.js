@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-grid-system';
 import './footer.css'
-import reddit from '/public/assets/imgs/reddit.png';
-import twitter from '/public/assets/imgs/twitter.png';
-import facebook from '/public/assets/imgs/facebook.png';
+import reddit from '/public/assets/images/reddit.png';
+import twitter from '/public/assets/images/twitter.png';
+import facebook from '/public/assets/images/facebook.png';
 
 const Footer = () => {
   function handleSumbit(e) {
