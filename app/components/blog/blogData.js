@@ -3,15 +3,15 @@
 import car from '/app/components/blog/car.png';
 
 const blogPosts = [
-    {
-        id: 1,
-        slug: "VW-ABA-Engine-A-Comprehensive-Guide",
-        title: 'VW ABA Engine: A Comprehensive Guide',
-        date: 'December 24, 2023',
-        author: 'Mark Testman',
-        thumbnail: car,
-        image: car,
-        text: `<h2>Introduction</h2>
+  {
+    id: 1,
+    slug: 'VW-ABA-Engine-A-Comprehensive-Guide',
+    title: 'VW ABA Engine: A Comprehensive Guide',
+    date: 'December 24, 2023',
+    author: 'Mark Testman',
+    thumbnail: car,
+    image: car,
+    text: `<h2>Introduction</h2>
 
         <p>The Volkswagen ABA engine, known for its reliability and straightforward design, is a remarkable piece of automotive engineering. This 2.0-liter, 4-cylinder, 8-valve engine, often described as the "tall block," has been a popular choice for enthusiasts and mechanics for engine swaps and upgrades. In this article, we delve into the details of the VW ABA engine, its applications, and what makes it a preferred choice for many.</p>
         
@@ -60,17 +60,17 @@ const blogPosts = [
         <h2>Conclusion</h2>
         
         <p>The VW ABA engine stands out as a robust, efficient, and adaptable engine, making it a top choice for various Volkswagen models and engine swap projects. Its simplicity, coupled with the crossflow head design and the taller block architecture, make it an excellent option for those looking to enhance their vehicle's performance.</p>
-        `
-    },    
-    {
-        id: 2,
-        slug: "VW-1-8T-Engine-A-Comprehensive-Guide",
-        title: 'VW 1.8T Engine: A Comprehensive Guide',
-        date: 'February 10, 2023',
-        author: 'Mark Testman',
-        thumbnail: car,
-        image: car,
-        text: `    <h2>Engine Specifications and Design</h2>
+        `,
+  },
+  {
+    id: 2,
+    slug: 'VW-1-8T-Engine-A-Comprehensive-Guide',
+    title: 'VW 1.8T Engine: A Comprehensive Guide',
+    date: 'February 10, 2023',
+    author: 'Mark Testman',
+    thumbnail: car,
+    image: car,
+    text: `    <h2>Engine Specifications and Design</h2>
         <ul>
             <li><strong>Displacement and Build</strong>: The 1.8T engine has a displacement of 1,781 cc, derived from an 81-mm bore and an 86-mm stroke. It features a cast-iron block and an aluminum cylinder head with dual overhead camshafts and five valves per cylinder.</li>
             <li><strong>Strength and Durability</strong>: Key to its strength is a die-forged steel crankshaft, split forged connecting rods, and in some cases, Mahle forged pistons.</li>
@@ -103,18 +103,18 @@ const blogPosts = [
     
         <h2>Conclusion</h2>
         <p>The VW 1.8T engine is a testament to Volkswagen's commitment to performance and innovation. While it has its challenges, its versatility, power, and potential for tuning have made it a favorite among enthusiasts and a significant player in the automotive industry.</p>
-        <p>For more detailed information on the VW 1.8T engine, you can explore the comprehensive guides and discussions at It Still Runs, Motor Reviewer, Performance by IE, Motor Crux, and Dust Runners Automotive Journal.</p>`
-    },
-    
-    {
-        id: 3,
-        slug: "Swapping-VW-Golf-ABA-and-1-8T-Engines",
-        title: 'Swapping VW Golf ABA and 1.8T Engines',
-        date: 'March 15, 2023',
-        author: 'Mark Testman',
-        thumbnail: car,
-        image: car,
-        text: `<h2>Introduction</h2>
+        <p>For more detailed information on the VW 1.8T engine, you can explore the comprehensive guides and discussions at It Still Runs, Motor Reviewer, Performance by IE, Motor Crux, and Dust Runners Automotive Journal.</p>`,
+  },
+
+  {
+    id: 3,
+    slug: 'Swapping-VW-Golf-ABA-and-1-8T-Engines',
+    title: 'Swapping VW Golf ABA and 1.8T Engines',
+    date: 'March 15, 2023',
+    author: 'Mark Testman',
+    thumbnail: car,
+    image: car,
+    text: `<h2>Introduction</h2>
             
     <p>Are you a proud owner of a Volkswagen Golf Mk1 or Mk2, yearning for more power under the hood? Perhaps you're intrigued by the idea of breathing new life into your classic VW? Well, you're in the right place! In this SEO-optimized article, we'll delve into the world of engine swaps, focusing on the VW ABA and 1.8T engines. These swaps can transform your beloved VW Golf, making it a true powerhouse on the road.</p>
     
@@ -162,29 +162,29 @@ const blogPosts = [
     
     <h2>Conclusion</h2>
     
-    <p>Swapping VW ABA and 1.8T engines into your beloved Golf Mk1 or Mk2 can elevate your driving experience to new heights. With the right knowledge and attention to detail, you can unlock the true potential of your classic VW, transforming it into a high-performance machine that turns heads on the road. So, if you're ready to take your VW Golf to the next level, consider these engine conversion options and embark on an exciting journey of automotive customization. Happy motoring!</p>`
-    },
-    // {
-    //     id: 4,
-    //     slug: "blog-post-4",
-    //     title: 'Blog Post 4',
-    //     date: 'April 20, 2023',
-    //     author: 'Thomas Rodriguez',
-    //     thumbnail: kit,
-    //     image: car,
-    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...'
-    // },
-    // {
-    //     id: 5,
-    //     slug: "blog-post-5",
-    //     title: 'Blog Post 5',
-    //     date: 'May 25, 2023',
-    //     author: 'Thomas Rodriguez',
-    //     thumbnail: kit,
-    //     image: car,
-    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...'
-    // },
-    // Additional blog posts...
+    <p>Swapping VW ABA and 1.8T engines into your beloved Golf Mk1 or Mk2 can elevate your driving experience to new heights. With the right knowledge and attention to detail, you can unlock the true potential of your classic VW, transforming it into a high-performance machine that turns heads on the road. So, if you're ready to take your VW Golf to the next level, consider these engine conversion options and embark on an exciting journey of automotive customization. Happy motoring!</p>`,
+  },
+  // {
+  //     id: 4,
+  //     slug: "blog-post-4",
+  //     title: 'Blog Post 4',
+  //     date: 'April 20, 2023',
+  //     author: 'Thomas Rodriguez',
+  //     thumbnail: kit,
+  //     image: car,
+  //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...'
+  // },
+  // {
+  //     id: 5,
+  //     slug: "blog-post-5",
+  //     title: 'Blog Post 5',
+  //     date: 'May 25, 2023',
+  //     author: 'Thomas Rodriguez',
+  //     thumbnail: kit,
+  //     image: car,
+  //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...'
+  // },
+  // Additional blog posts...
 ];
 
 export default blogPosts;
