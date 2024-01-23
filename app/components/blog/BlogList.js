@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-grid-system';
 import BlogCard from './BlogCard.js'; 
 import blogPosts from './blogData.js'
-import './blog.css'
+import   '/app/components/blog/blog.css';
 
 const BlogList = () => {
     return (
