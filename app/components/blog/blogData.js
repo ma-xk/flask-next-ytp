@@ -1,5 +1,3 @@
-'use client';
-
 import car from '/app/components/blog/car.png';
 
 const blogPosts = [
