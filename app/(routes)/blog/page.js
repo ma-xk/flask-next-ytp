@@ -1,19 +1,15 @@
-'use client';
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 
 import BlogList from '/app/components/blog/BlogList';
 
 function Blog() {
   return (
-    <div>
-      <Container>
-        <Row justify='center'>
-          <Col xs={12} md={10} lg={10}>
-            <BlogList />
-          </Col>
-        </Row>
-      </Container>
+    <div className="container mx-auto">
+      <div className="flex justify-center">
+        <div className="w-full md:w-10/12 lg:w-10/12">
+          <BlogList />
+        </div>
+      </div>
     </div>
   );
 }
