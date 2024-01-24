@@ -1,103 +1,85 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Container, Row, Col } from 'react-grid-system';
-import './footer.css';
 import reddit from '/public/assets/images/reddit.png';
 import twitter from '/public/assets/images/twitter.png';
 import facebook from '/public/assets/images/facebook.png';
+import SubscribeForm from '../../common/SubscribeForm';
+import './footer.css';
 
 const Footer = () => {
-  function handleSumbit(e) {
-    e.preventDefault();
-    console.log('sumbit');
-  }
   return (
     <footer className='footer'>
-      <Container>
-        <Row>
-          <Col xs={12} sm={6} md={3}>
-            <div className='footer-section'>
-              <h5>Product</h5>
-              <ul>
-                <li>Employee database</li>
-                <li>Payroll</li>
-                <li>Absences</li>
-                <li>Time tracking</li>
-              </ul>
+      <div className='container mx-auto max-w-screen-xl px-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
+          {/* Product Section */}
+          <div className='footer-section'>
+            <h5>Product</h5>
+            <ul>
+              <li>Employee database</li>
+              <li>Payroll</li>
+              <li>Absences</li>
+              <li>Time tracking</li>
+            </ul>
+          </div>
+
+          {/* Information Section */}
+          <div className='footer-section'>
+            <h5>Information</h5>
+            <ul>
+              <li>FAQ</li>
+              <li>Blog</li>
+              <li>Support</li>
+            </ul>
+          </div>
+
+          {/* Company Section */}
+          <div className='footer-section'>
+            <h5>Company</h5>
+            <ul>
+              <li>About us</li>
+              <li>Careers</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+
+          {/* Subscribe Section */}
+          <SubscribeForm />
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className='container mx-auto max-w-screen-xl px-4'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+          {/* Logo Section */}
+          <div className='footer-bottom'>
+            <div className='logo'>LFT</div>
+          </div>
+
+          {/* Links Section */}
+          <div className='footer-bottom'>
+            <div className='footer-links'>
+              <Link href='/terms'>Terms</Link>
+              <Link href='/privacy'>Privacy</Link>
+              <Link href='/cookies'>Cookies</Link>
             </div>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <div className='footer-section'>
-              <h5>Information</h5>
-              <ul>
-                <li>FAQ</li>
-                <li>Blog</li>
-                <li>Support</li>
-              </ul>
+          </div>
+
+          {/* Social Section */}
+          <div className='footer-bottom'>
+            <div className='footer-social'>
+              <Link href='https://reddit.com'>
+                <Image src={reddit} alt='Reddit Icon' />
+              </Link>
+              <Link href='https://facebook.com'>
+                <Image src={facebook} alt='Facebook Icon' />
+              </Link>
+              <Link href='https://twitter.com'>
+                <Image src={twitter} alt='Twitter Icon' />
+              </Link>
             </div>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <div className='footer-section'>
-              <h5>Company</h5>
-              <ul>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Contact us</li>
-              </ul>
-            </div>
-          </Col>
-          <Col xs={12} sm={6} md={3}>
-            <div className='footer-section subscribe-section'>
-              <h5>Subscribe</h5>
-              <form onSubmit={handleSumbit}>
-                <input type='email' placeholder='Email address' />
-                <button type='submit'>→</button>
-              </form>
-              <p>
-                Hello, we are LFT Media. Our goal is to translate the positive
-                effects from workouts to how companies engage with their clients
-                & their teams.
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col xs={12} md={4}>
-            <div className='footer-bottom'>
-              <div className='logo'>LFT</div>
-            </div>
-          </Col>
-          <Col xs={12} md={4}>
-            <div className='footer-bottom'>
-              <div className='footer-links'>
-                <a href='/terms'>Terms</a>
-                <a href='/privacy'>Privacy</a>
-                <a href='/cookies'>Cookies</a>
-              </div>
-            </div>
-          </Col>
-          <Col xs={12} md={4}>
-            <div>
-              <div className='footer-bottom'>
-                <div className='footer-social'>
-                  <Link href='https://reddit.com'>
-                    <Image src={reddit} alt='Reddit Icon' />
-                  </Link>
-                  <Link href='https://facebook.com'>
-                    <Image src={facebook} alt='Facebook Icon' />
-                  </Link>
-                  <Link href='https://twitter.com'>
-                    <Image src={twitter} alt='Twitter Icon' />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
