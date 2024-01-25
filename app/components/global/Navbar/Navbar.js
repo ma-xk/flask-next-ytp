@@ -64,40 +64,43 @@ const Navbar = () => {
             <Link href='/login' className='link'>
               Login
             </Link>
+            <Link href='/courses' className='link'>
+              Courses
+            </Link>
           </div>
         </div>
-      </div>
 
-      <div
-        className={`offcanvas-menu ${isMenuOpen ? 'open' : ''}`}
-        ref={offcanvasRef}
-      >
-        <button className='close-button' onClick={toggleMenu}>
-          &times;
-        </button>
+        <div
+          className={`offcanvas-menu ${isMenuOpen ? 'open' : ''}`}
+          ref={offcanvasRef}
+        >
+          <button className='close-button' onClick={toggleMenu}>
+            &times;
+          </button>
 
-        <div className='offcanvas-logo'>
-          <Image src={logo} alt='Logo' />
-        </div>
+          <div className='offcanvas-logo'>
+            <Image src={logo} alt='Logo' />
+          </div>
 
-        <Link href='/blog' className='link' onClick={toggleMenu}>
-          Blog
-        </Link>
-        <Link href='/admin' className='link' onClick={toggleMenu}>
-          Admin
-        </Link>
-        <Link href='/login' className='link'>
+          <Link href='/blog' className='link' onClick={toggleMenu}>
+            Blog
+          </Link>
+          <Link href='/admin' className='link' onClick={toggleMenu}>
+            Admin
+          </Link>
+          <Link href='/login' className='link'>
             Login
           </Link>
           <Link href='/courses' className='link'>
             Courses
           </Link>
-      </div>
+        </div>
 
-      <div
-        className={`backdrop ${isMenuOpen ? 'open' : ''}`}
-        onClick={toggleMenu}
-      ></div>
+        <div
+          className={`backdrop ${isMenuOpen ? 'open' : ''}`}
+          onClick={toggleMenu}
+        ></div>
+      </div>
     </nav>
   );
 };
