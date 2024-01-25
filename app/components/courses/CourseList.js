@@ -1,24 +1,23 @@
+'use client';
+
 import React from 'react';
-import { Row, Col } from 'react-grid-system';
 import CourseCard from './CourseCard.js';
 import courseData from './courseData.js';
-import '/app/components/blog/blog.css';
+import '/app/components/blog/blog.css'; // Keep the CSS import
 
 const CourseList = () => {
   return (
-    <Row>
+    <div className="flex flex-wrap -mx-4">
       {courseData.map((post) => (
-        <Col key={post.id} xs={12} sm={12} md={6} lg={4}>
+        <div key={post.id} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 px-4 mb-8">
           <CourseCard
             thumbnail={post.thumbnail}
             title={post.title}
-            author={post.author}
-            date={post.date}
             slug={post.slug} // Pass slug for routing
           />
-        </Col>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 };
 

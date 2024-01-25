@@ -15,8 +15,6 @@ const CourseCard = ({ thumbnail, title, author, date, slug }) => {
       />
       <div className='blog-content'>
         <h2 className='blog-title'>{title}</h2>
-        <p className='blog-author'>{author}</p>
-        <p className='blog-date'>{date}</p>
         <Link href={`/courses/${slug}`} passHref>
           <button className='inverse-button-style'>Read More</button>
         </Link>
