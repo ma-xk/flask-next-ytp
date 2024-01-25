@@ -64,6 +64,9 @@ const Navbar = () => {
           <Link href='/login' className='link'>
             Login
           </Link>
+          <Link href='/courses' className='link'>
+            Courses
+          </Link>
         </div>
       </Container>
 
@@ -85,6 +88,12 @@ const Navbar = () => {
         <Link href='/admin' className='link' onClick={toggleMenu}>
           Admin
         </Link>
+        <Link href='/login' className='link'>
+            Login
+          </Link>
+          <Link href='/courses' className='link'>
+            Courses
+          </Link>
       </div>
 
       <div
