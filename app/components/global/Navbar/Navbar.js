@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Container, Row, Col } from 'react-grid-system';
 import './navbar.css';
 import logo from '/public/assets/images/logo.png';
 
@@ -43,29 +42,31 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <Container className='nav-content'>
-        <div className='logo'>
-          <Link href='/'>
-            <Image src={logo} alt='Logo' className='navbar-logo' />
-          </Link>
-        </div>
+      <div className='container mx-auto'>
+        <div className='flex items-center justify-between p-4'>
+          <div className='logo'>
+            <Link href='/'>
+              <Image src={logo} alt='Logo' className='navbar-logo' />
+            </Link>
+          </div>
 
-        <button className='hamburger' onClick={toggleMenu}>
-          &#9776;
-        </button>
+          <button className='hamburger' onClick={toggleMenu}>
+            &#9776;
+          </button>
 
-        <div className={`links ${isMenuOpen ? 'hidden' : ''}`}>
-          <Link href='/blog' className='link'>
-            Blog
-          </Link>
-          <Link href='/admin' className='link'>
-            Admin
-          </Link>
-          <Link href='/login' className='link'>
-            Login
-          </Link>
+          <div className={`links ${isMenuOpen ? 'hidden' : ''}`}>
+            <Link href='/blog' className='link'>
+              Blog
+            </Link>
+            <Link href='/admin' className='link'>
+              Admin
+            </Link>
+            <Link href='/login' className='link'>
+              Login
+            </Link>
+          </div>
         </div>
-      </Container>
+      </div>
 
       <div
         className={`offcanvas-menu ${isMenuOpen ? 'open' : ''}`}
