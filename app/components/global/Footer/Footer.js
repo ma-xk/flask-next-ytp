@@ -72,9 +72,9 @@ const Footer = () => {
           {/* Links Section */}
           <div className='footer-bottom'>
             <div className='footer-links'>
-              <Link href='/terms'>Terms</Link>
-              <Link href='/privacy'>Privacy</Link>
-              <Link href='/cookies'>Cookies</Link>
+              <Link className='footer-links-bottom' href='/terms'>Terms</Link>
+              <Link className='footer-links-bottom' href='/privacy'>Privacy</Link>
+              <Link className='footer-links-bottom' href='/cookies'>Cookies</Link>
             </div>
           </div>
 

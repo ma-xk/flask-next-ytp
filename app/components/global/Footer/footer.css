@@ -63,6 +63,17 @@
   color: yellow; /* Adjust the color as needed */
 
 }
+
+.footer-links-bottom {
+  margin: 10px 20px;
+  color: white;
+  text-decoration: none; 
+}
+
+.footer-links-bottom:hover {
+  color: yellow;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
