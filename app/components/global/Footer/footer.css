@@ -53,11 +53,15 @@
   padding-top: 20px;
   border-top: 1px solid #444;
 }
-.footer-links a,
-.footer-social a {
-  color: #aaaaaa;
-  text-decoration: none;
-  margin-right: 1rem;
+.link {
+  margin-left: auto;
+  color: white;
+  text-decoration: none; 
+}
+
+.link:hover {
+  color: yellow; /* Adjust the color as needed */
+
 }
 .logo {
   font-size: 1.5rem;

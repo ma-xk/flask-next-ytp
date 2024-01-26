@@ -15,10 +15,15 @@ const Footer = () => {
           <div className='footer-section'>
             <h5>Product</h5>
             <ul>
-              <li>Employee database</li>
-              <li>Payroll</li>
-              <li>Absences</li>
-              <li>Time tracking</li>
+              <li>
+              <Link href='/courses' className='link'>Courses</Link>
+              </li>
+              <li>
+              <Link href='/services' className='link'>Services</Link>
+              </li>
+              <li>
+              <Link href='/support' className='link'>Support</Link>
+              </li>
             </ul>
           </div>
 
@@ -26,9 +31,15 @@ const Footer = () => {
           <div className='footer-section'>
             <h5>Information</h5>
             <ul>
-              <li>FAQ</li>
-              <li>Blog</li>
-              <li>Support</li>
+              <li>
+              <Link href='/faq' className='link'>FAQ</Link>
+              </li>
+              <li>
+              <Link href='/blog' className='link'>Blog</Link>
+              </li>
+              <li>
+              <Link href='/support' className='link'>Support</Link>
+              </li>
             </ul>
           </div>
 
@@ -36,9 +47,12 @@ const Footer = () => {
           <div className='footer-section'>
             <h5>Company</h5>
             <ul>
-              <li>About us</li>
-              <li>Careers</li>
-              <li>Contact us</li>
+              <li>
+                <Link href='/about' className='link'>About Us</Link>
+              </li>
+              <li>
+                <Link href='/contact' className='link'>Contact</Link>
+              </li>
             </ul>
           </div>
 

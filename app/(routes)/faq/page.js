@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Privacy() {
+function FAQ() {
   return (
     <div className="container mx-auto">
       <div className="flex justify-center">
         <div className="w-full md:w-10/12 lg:w-10/12">
-        <h1>Privacy</h1>
-        <h2>Stay Secretive & Private as Heck at All Times</h2>
+        <h1>FAQ</h1>
+        <h2>People won't stop asking us these questions.</h2>
         </div>
       </div>
     </div>
   );
 }
 
-export default Privacy;
+export default FAQ;
