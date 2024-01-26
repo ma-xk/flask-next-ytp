@@ -95,3 +95,7 @@
   height: 36px;
   width: auto;
 }
+
+.footer-social img:hover {
+  transform: scale(1.2); /* You can adjust the scale factor as needed */
+}
