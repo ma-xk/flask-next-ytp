@@ -53,13 +53,13 @@
   padding-top: 20px;
   border-top: 1px solid #444;
 }
-.link {
+.footer .link {
   margin-left: auto;
   color: white;
   text-decoration: none; 
 }
 
-.link:hover {
+.footer .link:hover {
   color: yellow; /* Adjust the color as needed */
 
 }
