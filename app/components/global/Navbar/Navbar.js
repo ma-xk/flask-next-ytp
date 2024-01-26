@@ -55,18 +55,19 @@ const Navbar = () => {
           </button>
 
           <div className={`links ${isMenuOpen ? 'hidden' : ''}`}>
+          <Link href='/courses' className='link'>
+              Courses
+            </Link>
             <Link href='/blog' className='link'>
               Blog
             </Link>
             <Link href='/admin' className='link'>
               Admin
             </Link>
-            <Link href='/login' className='link'>
+            <Link href='https://courses.yourtrainingprovider.com/' className='link'>
               Login
             </Link>
-            <Link href='/courses' className='link'>
-              Courses
-            </Link>
+
           </div>
         </div>
 
@@ -81,7 +82,9 @@ const Navbar = () => {
           <div className='offcanvas-logo'>
             <Image src={logo} alt='Logo' />
           </div>
-
+          <Link href='/courses' className='link'>
+            Courses
+          </Link>
           <Link href='/blog' className='link' onClick={toggleMenu}>
             Blog
           </Link>
@@ -90,9 +93,6 @@ const Navbar = () => {
           </Link>
           <Link href='/login' className='link'>
             Login
-          </Link>
-          <Link href='/courses' className='link'>
-            Courses
           </Link>
         </div>
 

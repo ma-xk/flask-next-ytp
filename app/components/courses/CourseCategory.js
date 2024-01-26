@@ -1,17 +1,17 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import courseData from './courseData'
 
-import blogPosts from '/app/components/blog/blogData';
 
 import '/app/components/blog/blog.css'; // Keep the CSS import
 
 
-const BlogPost = ({ params }) => {
+const CourseCategory = ({ params }) => {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    const fetchedPost = blogPosts.find((p) => p.slug === params.slug);
+    const fetchedPost = courseData.find((p) => p.slug === params.slug);
     setPost(fetchedPost);
   }, [params.slug]);
 
@@ -52,4 +52,4 @@ const BlogPost = ({ params }) => {
   );
 };
 
-export default BlogPost;
+export default CourseCategory;
