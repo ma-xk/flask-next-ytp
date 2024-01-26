@@ -81,7 +81,9 @@ const Navbar = () => {
           <div className='offcanvas-logo'>
             <Image src={logo} alt='Logo' />
           </div>
-
+          <Link href='/courses' className='link'>
+            Courses
+          </Link>
           <Link href='/blog' className='link' onClick={toggleMenu}>
             Blog
           </Link>
@@ -90,9 +92,6 @@ const Navbar = () => {
           </Link>
           <Link href='/login' className='link'>
             Login
-          </Link>
-          <Link href='/courses' className='link'>
-            Courses
           </Link>
         </div>
 

@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import blogData from './blogData'
 
 import blogPosts from '/app/components/blog/blogData';
 
