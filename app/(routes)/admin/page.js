@@ -1,5 +1,6 @@
 import React from 'react';
 import EditorForm from '../../components/admin/EditorForm';
+
 function Admin() {
   return (
     <div className="container mx-auto">

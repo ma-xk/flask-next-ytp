@@ -1,15 +1,20 @@
-'use client'
-import ReactQuill from 'react-quill';
+import dynamic from 'next/dynamic';
 import 'react-quill/dist/quill.snow.css';
+
+// Dynamically import ReactQuill with SSR set to false
+const ReactQuillNoSSRWrapper = dynamic(
+  () => import('react-quill'),
+  { ssr: false }
+);
 
 const TextEditor = ({ value, onChange }) => {
     return (
-      <ReactQuill
+      <ReactQuillNoSSRWrapper
         theme="snow"
-        // value={value}
-        // onChange={onChange}
+        value={value}
+        onChange={onChange}
       />
     );
-  };
+};
 
-export default TextEditor
+export default TextEditor;
