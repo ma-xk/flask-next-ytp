@@ -89,7 +89,7 @@ button.is-active {
 
 /* Assuming the class for the Tiptap editor content is .ProseMirror */
 .ProseMirror {
-  border: 1px solid black; /* default border */
+  border: 2px solid rgb(179, 179, 179); /* default border */
   border-radius: 8px;
   padding: 10px; /* Add padding around the text */
   min-height: 40vh;
