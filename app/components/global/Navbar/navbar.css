@@ -116,29 +116,10 @@
   
     @media (max-width: 750px) {
       .hamburger {
-        display: block;
+        display: block; /* Show hamburger menu */
       }
     
-      .nav-content .links {
+      .links {
         display: none; /* Hide regular links */
       }
-    
-      .nav-content .show {
-        display: block; /* Show links in off-canvas menu */
-      }
     }
-    
-    @media (min-width: 751px) {
-      .hamburger {
-        display: none; /* Hide hamburger icon */
-      }
-    
-      .offcanvas-menu {
-        display: none; /* Hide offcanvas menu */
-      }
-    
-      .nav-content .links {
-        display: block; /* Show regular links */
-      }
-    }
-  
