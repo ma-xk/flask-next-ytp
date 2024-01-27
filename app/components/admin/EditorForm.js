@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react';
-import TextEditor from './TextEditor';
+// import TextEditor from './TextEditor';
+import TipTap from './TipTap';
 
 
 const EditorForm = () => {
@@ -64,7 +65,7 @@ const EditorForm = () => {
         <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
       </label>
       <br />
-      <TextEditor value={content} onChange={handleEditorChange} />
+      <TipTap value={content} onChange={handleEditorChange} />
       <br />
       <button type="submit">Submit</button>
     </form>
