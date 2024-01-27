@@ -5,10 +5,23 @@
 
 .tiptap ul,
 .tiptap ol {
-  padding: 0 1rem;
+  padding-left: 1rem; /* Ensure enough space for bullets/numbers */
 }
 
-.tiptap h1,
+.tiptap ul {
+  list-style-type: disc; /* Style for unordered lists */
+  padding-left: 1rem; /* Ensure enough space for bullets */
+}
+
+
+.tiptap ol {
+  list-style-type: decimal; /* Style for ordered lists */
+}
+
+.tiptap li {
+  margin-left: 1rem; /* Adjust as necessary to align list items */
+}
+
 .tiptap h2,
 .tiptap h3,
 .tiptap h4,
@@ -54,16 +67,29 @@
 }
 
 button {
-  border: none;
-  background: none;
+  border: 1px solid #cccccc; /* Add border */
+  background-color: #f2f2f2; /* Light background */
   color: black;
   font-size: 0.85rem;
   font-weight: 500;
-  padding: 0 0.2rem;
-  opacity: 0.6;
+  padding: 6px 12px; /* Add padding */
+  margin: 10px 5px;
+  border-radius: 4px; /* Optional: Rounded corners */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+  opacity: 0.8; /* Slightly transparent */
+  cursor: pointer; /* Change cursor to indicate clickable */
 }
 
 button:hover,
 button.is-active {
-  opacity: 1;
+  border-color: #666666; /* Darker border on hover/active */
+  background-color: #e6e6e6; /* Slightly darker background on hover/active */
+  opacity: 1; /* Fully opaque on hover/active */
+}
+
+/* Assuming the class for the Tiptap editor content is .ProseMirror */
+.ProseMirror {
+  border: 1px solid black; /* default border */
+  border-radius: 8px;
+  padding: 10px; /* Add padding around the text */
 }

@@ -70,9 +70,6 @@ const MenuBar = () => {
       >
         code
       </button>
-      <button type="button" onClick={() => editor.chain().focus().unsetAllMarks().run()}>
-        clear marks
-      </button>
       <button type="button"
         onClick={() => editor.chain().focus().setParagraph().run()}
         className={editor.isActive('paragraph') ? 'is-active' : ''}
@@ -92,11 +89,11 @@ const MenuBar = () => {
         h3
       </button>
       <button type="button"
-        onClick={() => editor.chain().focus().toggleHeading({ level: 4 }).run()}
-        className={editor.isActive('heading', { level: 4 }) ? 'is-active' : ''}
-      >
-        bullet list
-      </button>
+  onClick={() => editor.chain().focus().toggleBulletList().run()}
+  className={editor.isActive('bulletList') ? 'is-active' : ''}
+>
+  bullet list
+</button>
       <button type="button"
         onClick={() => editor.chain().focus().toggleOrderedList().run()}
         className={editor.isActive('orderedList') ? 'is-active' : ''}
@@ -114,9 +111,6 @@ const MenuBar = () => {
         className={editor.isActive('blockquote') ? 'is-active' : ''}
       >
         blockquote
-      </button>
-      <button type="button" onClick={() => editor.chain().focus().setHardBreak().run()}>
-        hard break
       </button>
       <button type="button"
         onClick={() => editor.chain().focus().undo().run()}
@@ -141,12 +135,6 @@ const MenuBar = () => {
         }
       >
         redo
-      </button>
-      <button type="button"
-        onClick={() => editor.chain().focus().setColor('#958DF1').run()}
-        className={editor.isActive('textStyle', { color: '#958DF1' }) ? 'is-active' : ''}
-      >
-        purple
       </button>
     </>
   );
