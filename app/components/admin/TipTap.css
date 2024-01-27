@@ -92,4 +92,5 @@ button.is-active {
   border: 1px solid black; /* default border */
   border-radius: 8px;
   padding: 10px; /* Add padding around the text */
+  min-height: 40vh;
 }
