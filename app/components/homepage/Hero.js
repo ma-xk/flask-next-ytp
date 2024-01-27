@@ -1,5 +1,4 @@
-'use client'
-
+import car from '/app/components/blog/car.png';
 
 const Hero = () => {
     return (
@@ -12,11 +11,10 @@ const Hero = () => {
           </button>
         </div>
         <div className="w-1/2 flex justify-center">
-          <img src="/logo.png" alt="Hero Image" className="max-w-xs md:max-w-sm" />
-        </div>
+        <img src={car} alt="Car Image" className="max-w-xs md:max-w-sm" />
+                </div>
       </div>
     );
   };
   
   export default Hero;
-  
