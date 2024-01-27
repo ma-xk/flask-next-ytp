@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import TextEditor from './TextEditor';
-import QuillEditor from './QuillEditor';
 
 
 const EditorForm = () => {
