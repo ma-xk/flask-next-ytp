@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BlogList from '/app/components/blog/BlogList';
+import BlogList from '../../components/blog/BlogList';
 
 function Blog() {
   return (

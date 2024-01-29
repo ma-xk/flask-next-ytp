@@ -1,4 +1,4 @@
-import car from '/app/components/blog/car.png';
+import car from './car.png';
 
 const blogPosts = [
   {

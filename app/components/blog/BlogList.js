@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogCard from './BlogCard.js';
 import blogPosts from './blogData.js';
-import '/app/components/blog/blog.css'; // Keep the CSS import
+import './blog.css'; // Keep the CSS import
 
 const BlogList = () => {
   return (

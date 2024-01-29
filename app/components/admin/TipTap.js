@@ -7,7 +7,7 @@ import { EditorProvider, useCurrentEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import React from 'react';
 
-import '/app/components/admin/TipTap.css';
+import './TipTap.css';
 
 const MenuBar = () => {
   const { editor } = useCurrentEditor();

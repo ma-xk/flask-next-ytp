@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'; // If you use Next.js Image component
-import '/app/components/blog/blog.css';
+import './blog.css';
 
 const BlogCard = ({ thumbnail, title, author, date, slug }) => {
   return (

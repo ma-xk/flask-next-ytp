@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import blogPosts from '/app/components/blog/blogData';
+import blogPosts from './blogData';
 
-import '/app/components/blog/blog.css'; // Keep the CSS import
+import './blog.css'; // Keep the CSS import
 
 
 const BlogPost = ({ params }) => {
