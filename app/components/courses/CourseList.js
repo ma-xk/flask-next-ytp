@@ -1,9 +1,7 @@
-'use client';
-
 import React from 'react';
 import CourseCard from './CourseCard.js';
 import courseData from './courseData.js';
-import '/app/components/blog/blog.css'; // Keep the CSS import
+import '../blog/blog.css'; // Keep the CSS import
 
 const CourseList = () => {
   return (

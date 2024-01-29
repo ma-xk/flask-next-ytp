@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CourseList from '/app/components/courses/CourseList';
+import CourseList from '../../components/courses/CourseList';
 
 function Courses() {
   return (

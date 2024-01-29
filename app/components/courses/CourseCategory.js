@@ -1,11 +1,9 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import courseData from './courseData'
+import courseData from './courseData';
 
-
-import '/app/components/blog/blog.css'; // Keep the CSS import
-
+import '../blog/blog.css'; // Keep the CSS import
 
 const CourseCategory = ({ params }) => {
   const [post, setPost] = useState(null);
@@ -17,9 +15,9 @@ const CourseCategory = ({ params }) => {
 
   if (!post) {
     return (
-      <div className="container mx-auto">
-        <div className="flex justify-center">
-          <div className="w-full md:w-10/12">
+      <div className='container mx-auto'>
+        <div className='flex justify-center'>
+          <div className='w-full md:w-10/12'>
             <div>Post not found</div>
           </div>
         </div>
@@ -28,9 +26,9 @@ const CourseCategory = ({ params }) => {
   }
 
   return (
-    <div className="container mx-auto">
-      <div className="flex justify-center">
-        <div className="w-full md:w-10/12">
+    <div className='container mx-auto'>
+      <div className='flex justify-center'>
+        <div className='w-full md:w-10/12'>
           <h1>{post.title}</h1>
           {post.image && (
             <Image

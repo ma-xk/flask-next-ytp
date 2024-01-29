@@ -1,6 +1,4 @@
-'use client';
-
-import car from '/app/components/blog/car.png';
+import car from './car.png';
 
 const courseData = [
   {
@@ -113,7 +111,6 @@ const courseData = [
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula diam non massa hendrerit, sed tempus dui ultricies. Fusce consectetur urna id lacus lobortis eleifend. Nullam et purus sit amet quam cursus vehicula ac non urna. Sed vitae odio non dui tincidunt pharetra. Phasellus a ullamcorper quam. Sed non turpis at nunc efficitur luctus. Praesent id odio a dolor ultrices tincidunt id eu ex. Aliquam erat volutpat. Sed vestibulum nunc sit amet eleifend. Ut auctor, mi a fermentum efficitur, lorem sem interdum urna, in varius tortor velit sit amet libero. Praesent in elit nec purus semper suscipit. Sed a massa at ex tincidunt fermentum ac quis sapien. Integer posuere tincidunt nulla, at malesuada arcu finibus in. Aenean ut euismod odio. Praesent vel auctor orci. Nullam et libero felis.
     `,
   },
-  
 ];
 
 export default courseData;
