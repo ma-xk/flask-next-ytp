@@ -10,19 +10,28 @@ const SubscribeForm = () => {
   }
 
   return (
-    <div className='footer-section subscribe-section'>
-      <h5>Subscribe</h5>
+    <div className='flex flex-col'>
+      <h5 className='mb-4'>Subscribe</h5>
       <form onSubmit={handleSubmit}>
-        <input type='email' placeholder='Email address' />
-        <button type='submit'>→</button>
+        <input
+          type='email'
+          placeholder='Email address'
+          className='p-2 border-none mr-2  text-black w-auto'
+        />
+        <button
+          type='submit'
+          className='bg-[#3a7bff] text-white p-2 cursor-pointer'
+        >
+          →
+        </button>
       </form>
       <p>
-        Hello, we are LFT Media. Our goal is to translate the positive
-        effects from workouts to how companies engage with their clients
-        & their teams.
+        Subscribe to our mailing list!
       </p>
     </div>
   );
 };
 
 export default SubscribeForm;
+
+
