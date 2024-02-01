@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className='flex justify-between items-center p-6'>
-      <div className='space-y-4'>
+    <div className='flex flex-col md:flex-row justify-between items-center p-6'>
+      <div className='md:mr-6 space-y-4'>
         <h1 className='text-4xl font-bold'>eLearning & Training Providers</h1>
         <p className='text-gray-600'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -14,8 +14,12 @@ const Hero = () => {
           Click Me!
         </button>
       </div>
-      <div className='w-1/2 flex justify-center'>
-        <Image src={car} alt='Car Image' className='max-w-xs md:max-w-sm' />
+      <div className='w-full md:w-1/2 flex justify-center'>
+        <Image
+          src={car}
+          alt='Car Image'
+          className='md:max-w-xs lg:max-w-md xl:max-w-lg hidden md:block'
+        />
       </div>
     </div>
   );
