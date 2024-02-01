@@ -48,7 +48,7 @@
     position: fixed;
     top: 0;
     right: -100%; /* Start off-screen */
-    width: 300px; /* Adjust as needed */
+    width: 350px; /* Adjust as needed */
     height: 100%;
     background-color: gray; /* Adjust background color */
     transition: right 0.3s ease; /* Smooth slide-in effect */
@@ -89,15 +89,17 @@
     color: black; /* Adjust the color of the 'X' as needed */
   }
   
-    .offcanvas-logo {
-      text-align: center; /* Center the logo */
-      padding: 20px 0; /* Add some space around the logo */
-    }
-    
-    .offcanvas-logo img {
-      max-width: 100px; /* Adjust the size as needed */
-      height: auto; /* Maintain aspect ratio */
-    }
+  .offcanvas-logo {
+    display: flex;      /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px 0; /* Keeps existing padding */
+  }
+  
+  .offcanvas-logo img {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
     
     .backdrop {
       display: none;
