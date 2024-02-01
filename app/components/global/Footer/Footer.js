@@ -9,19 +9,19 @@ const Footer = () => {
   return (
     <footer className='bg-gray-800 text-white mt-auto py-8'>
       <div className='container mx-auto max-w-screen-xl px-4'>
-        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4'>
+        <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4'>
           {/* Product Section */}
           <div className='flex flex-col'>
             <h5 className='text-gray-600 mb-4'>Product</h5>
             <ul>
               <li>
-                <Link href='/courses' className='link'>Courses</Link>
+                <Link href='/courses'>Courses</Link>
               </li>
               <li>
-                <Link href='/services' className='link'>Services</Link>
+                <Link href='/services'>Services</Link>
               </li>
               <li>
-                <Link href='/support' className='link'>Support</Link>
+                <Link href='/support'>Support</Link>
               </li>
             </ul>
           </div>
@@ -31,13 +31,13 @@ const Footer = () => {
             <h5 className='text-gray-600 mb-4'>Information</h5>
             <ul>
               <li>
-                <Link href='/faq' className='link'>FAQ</Link>
+                <Link href='/faq'>FAQ</Link>
               </li>
               <li>
-                <Link href='/blog' className='link'>Blog</Link>
+                <Link href='/blog'>Blog</Link>
               </li>
               <li>
-                <Link href='/support' className='link'>Support</Link>
+                <Link href='/support'>Support</Link>
               </li>
             </ul>
           </div>
@@ -47,10 +47,10 @@ const Footer = () => {
             <h5 className='text-gray-600 mb-4'>Company</h5>
             <ul>
               <li>
-                <Link href='/about' className='link'>About Us</Link>
+                <Link href='/about'>About Us</Link>
               </li>
               <li>
-                <Link href='/contact' className='link'>Contact</Link>
+                <Link href='/contact'>Contact</Link>
               </li>
             </ul>
           </div>
@@ -70,23 +70,23 @@ const Footer = () => {
 
           {/* Links Section */}
           <div className='flex items-center md:col-span-1'>
-            <div className='flex space-x-4'>
-              <Link href='/terms' className='text-white hover:text-yellow-500 md:ml-0 md:mr-4'>Terms</Link>
-              <Link href='/privacy' className='text-white hover:text-yellow-500 md:ml-0 md:mr-4'>Privacy</Link>
-              <Link href='/cookies' className='text-white hover:text-yellow-500 md:ml-0 md:mr-4'>Cookies</Link>
+            <div className='flex '>
+              <Link href='/terms' className='text-white hover:text-yellow-500 ml-0 mr-4'>Terms</Link>
+              <Link href='/privacy' className='text-white hover:text-yellow-500 ml-0 mr-4'>Privacy</Link>
+              <Link href='/cookies' className='text-white hover:text-yellow-500 ml-0 mr-4'>Cookies</Link>
             </div>
           </div>
 
           {/* Social Section */}
-          <div className='flex items-center space-x-4 md:col-span-1'>
+          <div className='flex items-center '>
             <Link href='https://reddit.com'>
-              <Image src={reddit} alt='Reddit Icon' />
+              <Image className='w-12' src={reddit} alt='Reddit Icon' />
             </Link>
             <Link href='https://facebook.com'>
-              <Image src={facebook} alt='Facebook Icon' />
+              <Image className='w-12' src={facebook} alt='Facebook Icon' />
             </Link>
             <Link href='https://twitter.com'>
-              <Image src={twitter} alt='Twitter Icon' />
+              <Image className='w-12' src={twitter} alt='Twitter Icon' />
             </Link>
           </div>
         </div>
