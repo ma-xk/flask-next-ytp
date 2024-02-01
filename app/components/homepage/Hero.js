@@ -12,7 +12,7 @@ const Hero = () => {
         <h3 className='text-gray-600'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
         </h3>
-        <div className="mb-4"> {/* Added margin-bottom to this container */}
+        <div className="mb-4"> 
           <button className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300'>
             Click Me!
           </button>
