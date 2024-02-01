@@ -12,11 +12,11 @@ const SubscribeForm = () => {
   return (
     <div className='flex flex-col'>
       <h5 className='mb-4'>Subscribe</h5>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='flex flex-row '>
         <input
           type='email'
           placeholder='Email address'
-          className='p-2 border-none mr-2  text-black w-auto'
+          className='p-2 border-none mr-2 text-black w-full sm:w-auto md:w-full'
         />
         <button
           type='submit'
