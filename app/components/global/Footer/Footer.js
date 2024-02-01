@@ -1,9 +1,11 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import reddit from '../../../assets/images/reddit.png';
 import twitter from '../../../assets/images/twitter.png';
 import facebook from '../../../assets/images/facebook.png';
 import SubscribeForm from '../../common/SubscribeForm';
+import { Toaster } from "@/components/ui/toaster"
 
 const Footer = () => {
   return (
@@ -57,6 +59,7 @@ const Footer = () => {
 
           {/* Subscribe Section */}
           <SubscribeForm />
+          <Toaster />
         </div>
       </div>
 

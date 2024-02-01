@@ -1,11 +1,16 @@
-'use client'
+'use client';
 
 import React from 'react';
+import { useToast } from '@/components/ui/use-toast';
 
 const SubscribeForm = () => {
+  const { toast } = useToast();
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('HandleSubmit');
+    toast({
+      title: 'You have successfully submitted',
+      description: 'Thank you!',
+    });
     // Add your form submission logic here
   }
 
@@ -25,13 +30,9 @@ const SubscribeForm = () => {
           →
         </button>
       </form>
-      <p>
-        Subscribe to our mailing list!
-      </p>
+      <p>Subscribe to our mailing list!</p>
     </div>
   );
 };
 
 export default SubscribeForm;
-
-
