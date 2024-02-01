@@ -1,15 +1,17 @@
 'use client'
 
+import { Button } from "@/components/ui/button"
+
 import React from 'react';
 
-const Button = ({ onClick, children }) => {
+const GButton = ({ onClick, children }) => {
   return (
-    <button style={{}} onClick={onClick}>
+    <Button  onClick={onClick}>
       {children}
-    </button>
+    </Button>
   );
 };
 
-export default Button;
+export default GButton;
 
 //how can this be truly resuable if we can't make the function in the page.
