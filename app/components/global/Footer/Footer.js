@@ -1,11 +1,10 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import reddit from '../../../assets/images/reddit.png';
 import twitter from '../../../assets/images/twitter.png';
 import facebook from '../../../assets/images/facebook.png';
 import SubscribeForm from '../../common/SubscribeForm';
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from '@/components/ui/toaster';
 
 const Footer = () => {
   return (
@@ -17,13 +16,19 @@ const Footer = () => {
             <h5 className='text-gray-600 mb-4'>Product</h5>
             <ul>
               <li>
-                <Link href='/courses'>Courses</Link>
+                <Link className='hover:text-blue-500' href='/courses'>
+                  Courses
+                </Link>
               </li>
               <li>
-                <Link href='/services'>Services</Link>
+                <Link className='hover:text-blue-500' href='/services'>
+                  Services
+                </Link>
               </li>
               <li>
-                <Link href='/support'>Support</Link>
+                <Link className='hover:text-blue-500' href='/support'>
+                  Support
+                </Link>
               </li>
             </ul>
           </div>
@@ -33,13 +38,19 @@ const Footer = () => {
             <h5 className='text-gray-600 mb-4'>Information</h5>
             <ul>
               <li>
-                <Link href='/faq'>FAQ</Link>
+                <Link className='hover:text-blue-500' href='/faq'>
+                  FAQ
+                </Link>
               </li>
               <li>
-                <Link href='/blog'>Blog</Link>
+                <Link className='hover:text-blue-500' href='/blog'>
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link href='/support'>Support</Link>
+                <Link className='hover:text-blue-500' href='/support'>
+                  Support
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,10 +60,14 @@ const Footer = () => {
             <h5 className='text-gray-600 mb-4'>Company</h5>
             <ul>
               <li>
-                <Link href='/about'>About Us</Link>
+                <Link className='hover:text-blue-500' href='/about'>
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link href='/contact'>Contact</Link>
+                <Link className='hover:text-blue-500' href='/contact'>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,22 +89,49 @@ const Footer = () => {
           {/* Links Section */}
           <div className='flex items-center md:col-span-1'>
             <div className='flex '>
-              <Link href='/terms' className='text-white hover:text-yellow-500 ml-0 mr-4'>Terms</Link>
-              <Link href='/privacy' className='text-white hover:text-yellow-500 ml-0 mr-4'>Privacy</Link>
-              <Link href='/cookies' className='text-white hover:text-yellow-500 ml-0 mr-4'>Cookies</Link>
+              <Link
+                href='/terms'
+                className='text-white ml-0 mr-4 hover:text-blue-500'
+              >
+                Terms
+              </Link>
+              <Link
+                href='/privacy'
+                className='text-white ml-0 mr-4 hover:text-blue-500'
+              >
+                Privacy
+              </Link>
+              <Link
+                href='/cookies'
+                className='text-white ml-0 mr-4 hover:text-blue-500'
+              >
+                Cookies
+              </Link>
             </div>
           </div>
 
           {/* Social Section */}
           <div className='flex items-center '>
             <Link href='https://reddit.com'>
-              <Image className='w-12' src={reddit} alt='Reddit Icon' />
+              <Image
+                className='w-12 transition-transform duration-300 transform hover:scale-110'
+                src={reddit}
+                alt='Reddit Icon'
+              />
             </Link>
             <Link href='https://facebook.com'>
-              <Image className='w-12' src={facebook} alt='Facebook Icon' />
+              <Image
+                className='w-12 transition-transform duration-300 transform hover:scale-110'
+                src={facebook}
+                alt='Facebook Icon'
+              />
             </Link>
             <Link href='https://twitter.com'>
-              <Image className='w-12' src={twitter} alt='Twitter Icon' />
+              <Image
+                className='w-12 transition-transform duration-300 transform hover:scale-110'
+                src={twitter}
+                alt='Twitter Icon'
+              />
             </Link>
           </div>
         </div>

@@ -1,17 +1,29 @@
-'use client';
-
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import { useToast } from '@/components/ui/use-toast';
+import validator from 'validator';
 
 const SubscribeForm = () => {
   const { toast } = useToast();
+  const [email, setEmail] = useState('');
+
   function handleSubmit(e) {
     e.preventDefault();
-    toast({
-      title: 'You have successfully submitted',
-      description: 'Thank you!',
-    });
-    // Add your form submission logic here
+
+    // Validate email
+    if (validator.isEmail(email)) {
+      toast({
+        title: 'You have successfully submitted',
+        description: 'Thank you!',
+      });
+      // Add your form submission logic here
+    } else {
+      toast({
+        title: 'Invalid Email',
+        description: 'Please enter a valid email address.',
+        status: 'error',
+      });
+    }
   }
 
   return (
@@ -22,15 +34,17 @@ const SubscribeForm = () => {
           type='email'
           placeholder='Email address'
           className='p-2 border-none mr-2 text-black w-full sm:w-auto md:w-full'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <button
           type='submit'
-          className='bg-[#3a7bff] text-white p-2 cursor-pointer'
+          className='bg-[#3b82f6] text-white p-2 cursor-pointer'
         >
           →
         </button>
       </form>
-      <p>Subscribe to our mailing list!</p>
+      <p className='mt-2'>Subscribe to our mailing list!</p>
     </div>
   );
 };
